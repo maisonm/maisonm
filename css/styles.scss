@@ -135,6 +135,35 @@ body {
 	}
 }
 
+@media only screen and (max-width: 480px) {
+    .input-table {
+      width: 90%;
+      height: auto;
+      margin-top: 20px; 
+
+    }
+
+    .input-table form {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .input-table form input {
+
+      margin-bottom: 8px;
+      width: 250px!important;
+    
+    }
+
+    .input-table .form-heading .about {
+
+      margin-top: 30px;
+    }
+  }
+
 .handicap-output {
 
 	margin-top: 30px;
@@ -152,6 +181,14 @@ body {
 
 		margin-left: 10px;
 		font-size: 1.5em;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+	.handicap-output {
+
+		margin-bottom: 20px;
 	}
 }
 
@@ -203,6 +240,16 @@ body {
 			font-size: .7em;
 		}
 	}
+}
+
+@media only screen and (max-width: 480px) {
+
+  .round-container {
+
+    height: auto;
+    width: 90%;
+    margin-bottom: 20px;
+  }
 }
 
 .example-text {

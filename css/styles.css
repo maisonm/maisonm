@@ -95,6 +95,25 @@ body {
       -webkit-transition: .5s;
       transition: .5s; }
 
+@media only screen and (max-width: 480px) {
+  .input-table {
+    width: 90%;
+    height: auto;
+    margin-top: 20px; }
+
+  .input-table form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center; }
+
+  .input-table form input {
+    margin-bottom: 8px;
+    width: 250px !important; }
+
+  .input-table .form-heading .about {
+    margin-top: 30px; } }
 .handicap-output {
   margin-top: 30px;
   font-size: .7em;
@@ -106,6 +125,9 @@ body {
     margin-left: 10px;
     font-size: 1.5em; }
 
+@media only screen and (max-width: 480px) {
+  .handicap-output {
+    margin-bottom: 20px; } }
 .round-container {
   height: 75px;
   width: 50%;
@@ -144,6 +166,11 @@ body {
     .round-container .round p:nth-child(1) {
       font-size: .7em; }
 
+@media only screen and (max-width: 480px) {
+  .round-container {
+    height: auto;
+    width: 90%;
+    margin-bottom: 20px; } }
 .example-text {
   font-size: .75em;
   background: #d8d8d8;
