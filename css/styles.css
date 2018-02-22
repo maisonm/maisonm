@@ -106,7 +106,8 @@ body {
     flex-direction: column;
     width: 80%;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin-top: 60px; }
 
   .input-table form input {
     margin-bottom: 8px;
@@ -169,6 +170,7 @@ body {
 @media only screen and (max-width: 480px) {
   .round-container {
     height: auto;
+    padding-bottom: 45px;
     width: 90%;
     margin-bottom: 20px; } }
 .example-text {
