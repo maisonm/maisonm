@@ -1,0 +1,214 @@
+@import "variables.scss";
+
+* {
+
+	padding: 0;
+	margin: 0;
+}
+
+body {
+
+	color: $main-font-color;
+	font-size: 16px;
+	background-image: $body-bg-img;
+	background-color: $body-bg-color;
+    background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	font-family: verdana;
+}
+
+
+.input-table-container {
+
+	height: 100%;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+.input-table {
+
+	width: 50%;
+	height: 60%;
+	background-color: $input-table-bg;
+	-webkit-box-shadow: $box-shadow;
+	        box-shadow: $box-shadow;
+	border-radius: $border-radius;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+
+	.form-heading {
+
+		margin-bottom: 30px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+
+		.about {
+			font-size: .9em;
+			width: 80%;
+			margin-bottom: 20px;
+
+			h3 {
+
+				text-align: center;
+				margin-bottom: 12px;
+			}
+		}
+	}
+
+
+	form {
+
+		-webkit-box-shadow: $alt-box-shadow;
+
+		        box-shadow: $alt-box-shadow;
+		padding: 20px 10px;
+
+		input {
+
+			height: 20px;
+			padding: 0 4px;
+			border-radius: $border-radius;
+		    border: 2px solid $input-border-color;
+		    width: 130px;
+		    outline: none;
+		    -webkit-transition: .3s;
+		    transition: .3s;
+
+
+		}
+
+		button {
+
+			 height: 25px;
+      		 border-radius: $border-radius;
+     		 padding: 0 8px;
+
+		}
+
+		input:hover {
+
+			-webkit-box-shadow: 0 0 4px $input-hover-box-shadow;
+
+			        box-shadow: 0 0 4px $input-hover-box-shadow;
+			border: 2px solid $input-focus-border-color;
+			-webkit-transition: .5s;
+			transition: .5s;
+		}
+		input:focus {
+
+			-webkit-box-shadow: 0 0 4px $input-hover-box-shadow;
+
+			        box-shadow: 0 0 4px $input-hover-box-shadow;
+			border: 2px solid $input-focus-border-color;
+			-webkit-transition: .5s;
+			transition: .5s;
+		}
+	}
+}
+
+.handicap-output {
+
+	margin-top: 30px;
+	font-size: .7em;
+	text-align: center;
+
+
+	#handicap {
+
+		margin-left: 10px;
+		font-size: 1.5em;
+	}
+
+	#average-handicap {
+
+		margin-left: 10px;
+		font-size: 1.5em;
+	}
+}
+
+.round-container {
+
+	height: 75px;
+	width: 50%;
+	margin-top: 20px;
+	background-color: $input-table-bg;
+	-webkit-box-shadow: $box-shadow;
+	        box-shadow: $box-shadow;
+	border-radius: $border-radius;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	text-align: center;
+	padding: 18px 0;
+
+	.round {
+
+		-webkit-box-shadow: $alt-box-shadow;
+
+		        box-shadow: $alt-box-shadow;
+	    border-radius: $border-radius;
+		width: 80px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		padding-top: 10px;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+
+		p {
+
+			margin-bottom: 10px;
+		}
+
+		p:nth-child(1) {
+
+			font-size: .7em;
+		}
+	}
+}
+
+.example-text {
+
+	font-size: .75em;
+	background: #d8d8d8;
+	padding: 1px 3px;
+	font-style: italic;
+}

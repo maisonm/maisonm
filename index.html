@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Golf Handicap Calculator</title>
+      <link type="text/css" rel="stylesheet" href="css/styles.css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+   </head>
+   <body>
+      <div class="input-table-container">
+         <div class="input-table">
+            <div class="form-heading">
+               <div class="about">
+                  <h3>Calculate Golf Handicap</h3>
+                  <br>
+                  <p>Your golf handicap differential is calculated with the following formula: <span class="example-text">(18-Round Score - Course Slope) x 113 / Course Rating</span></p>
+                  <br>
+                  <p>The 113 represents a course rating of average difficulty, so it is a constant in the handicap formula. Once you have five round handicap differentials, your overall handicap can be calculated. It is done with the following formula: <span class="example-text">(Sum of all 5 differentials / Total Differentials) x 0.96</span></p>
+               </div>
+            </div>
+            <form id="round1">
+               <input id="full-round-score" type="text" placeholder="18-round Score" required>
+               <input id="course-slope" type="text" placeholder="USGA Course Slope" required>
+               <input id="course-rating" type="text" placeholder="USGA Course Rating" required>
+               <button type="button" id="btn-round1">SUBMIT</button>
+            </form>
+            <div class="handicap-output">
+               <p>Current Round Handicap Index:<span id="handicap"></span></p>
+               <p>5-Round Handicap Index:<span id="average-handicap"></span></p>
+            </div>
+         </div>
+         <div class="round-container">
+            <div class="round">
+               <p>Round 1</p>
+               <p><span class="rnd-output">Empty</span></p>
+            </div>
+            <div class="round">
+               <p>Round 2</p>
+               <p><span class="rnd-output">Empty</span></p>
+            </div>
+            <div class="round">
+               <p>Round 3</p>
+               <p><span class="rnd-output">Empty</span></p>
+            </div>
+            <div class="round">
+               <p>Round 4</p>
+               <p><span class="rnd-output">Empty</span></p>
+            </div>
+            <div class="round">
+               <p>Round 5</p>
+               <p><span class="rnd-output">Empty</span></p>
+            </div>
+         </div>
+      </div>
+      <script src="js/app.js"></script>
+   </body>
+</html>
