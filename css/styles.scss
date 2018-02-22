@@ -19,6 +19,13 @@ body {
 	font-family: verdana;
 }
 
+@media only screen and (max-width: 480px) {
+
+	body {
+
+		height: auto;
+	}
+}
 
 .input-table-container {
 
@@ -149,7 +156,6 @@ body {
       width: 80%;
       justify-content: center;
       align-items: center;
-      margin-top: 60px;
     }
 
     .input-table form input {
@@ -248,7 +254,7 @@ body {
   .round-container {
 
     height: auto;
-    padding-bottom: 45px;
+    padding-bottom: 18px 4px;
     width: 90%;
     margin-bottom: 20px;
   }
