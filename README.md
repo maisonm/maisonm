@@ -1,7 +1,7 @@
 # Maison Moa
 
 <p align="center">
-  <img src="https://s18.postimg.org/guw5supt5/resume.png">
+  <img src="https://s18.postimg.org/guw5supt5/resume.png" width="100px">
 </p>
 
 This Github page hosts multiple static websites for my portfolio.
