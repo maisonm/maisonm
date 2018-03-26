@@ -9,7 +9,7 @@ Web applications in my portfolio are hosted via Heroku and will not be found hos
 the repository description for web applications in my portfolio will include a Heroku link.
 
 To access any static website in this repo, simply add the project's folder name to the end of the Github Page URL like so:
-<p font-size="14px" > https://maisonm.github.io/PROJECT-FOLDER-NAME => https://maisonm.github.io/shui-restaurant </p>
+<p font-size="10px" > https://maisonm.github.io/PROJECT-FOLDER-NAME => https://maisonm.github.io/shui-restaurant </p>
 
 ---
 
