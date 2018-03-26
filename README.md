@@ -10,7 +10,8 @@ the repository description for web applications in my portfolio will include a H
 
 To access any static website in this repo, simply add the project's folder name to the end of the Github Page URL like so: https://maisonm.github.io/FOLDER-NAME => https://maisonm.github.io/shui-restaurant
 
-##
+---
+
 ## Technologies Used
 
 ###### Languages |
@@ -25,7 +26,6 @@ React.js, JQuery
 ###### Databases | 
 Reddis, MongoDB
 
-##
 ## What's hosted here?
 
 #### Shui Restaurant |
