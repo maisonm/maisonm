@@ -1,0 +1,153 @@
+@import "variables.scss";
+
+.reservations-page-container {
+
+	height: 100vh;
+	width: 100%;
+	color: #a8a8a8;
+	background-image: url("../assets/reservations-bg-img.png");
+	background-size: cover;
+	overflow: hidden;
+
+
+}
+.reservations-form-container {
+	
+
+	height: 100%;
+	width: 99.7%;
+	position: absolute;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.reservation-form {
+
+	min-height: 50%;
+	width: 70%;
+	background: $review-card-bg-color;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	z-index: 99;
+
+	.reservation-head {
+	
+		display: flex;
+		flex-direction: column;
+		width: 40%;
+		text-align: center;
+		font-size: .85em;
+		margin-bottom: 5%;
+
+			img {
+
+				margin-bottom: 40px;
+			}
+	}
+
+	.input-fields {
+
+		text-align: left;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+
+		input {
+
+			height: 30px;
+			width: 200px;
+			border-radius: 2px;
+			border: none;
+			padding-left: 10px;
+			margin-bottom: 8px;
+			font-weight: 500;
+		}
+
+		input:hover {
+
+			box-shadow: $reservation-input-hover-box-shadow;
+			transition: .3s;
+		}
+
+		input:focus {
+			outline: none;
+			box-shadow: $reservation-input-focus-box-shadow;
+		}
+
+		span {
+
+			margin-right: 30px;
+
+			p {
+
+				margin-bottom: 4px;
+				font-size: .9em;
+				font-weight: 500;
+			}
+		}
+
+	}
+
+	button {
+
+		height: 30px;
+		border: none;
+		border-radius: 2px;
+		width: 150px;
+		font-size: .9em;
+		font-weight: 700;
+		margin-top: 40px;
+		outline: none;
+		cursor: pointer;
+		transition: .5s;
+	}
+
+	button:hover {
+
+		width: 175px;
+		box-shadow: $reservation-input-hover-box-shadow;
+		transition: .3s;
+	}
+}
+
+.reservation-form-submit {
+
+	min-height: 50%;
+	width: 70%;
+	background: $review-card-bg-color;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	z-index: 99;
+	display: none;
+
+	.reservation-submit-success {
+
+		display: none;
+		text-align: center;
+
+		#return-home {
+
+			color: #e8e8e8;
+			transition: .3s;
+		}
+
+		#return-home:hover {
+			color: $link-hover-color;
+			transition: .3s;
+		}
+
+	}
+
+}
