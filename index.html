@@ -1,58 +1,167 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Golf Handicap Calculator</title>
-      <link type="text/css" rel="stylesheet" href="css/styles.css">
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
-   </head>
-   <body>
-      <div class="input-table-container">
-         <div class="input-table">
-            <div class="form-heading">
-               <div class="about">
-                  <h3>Calculate Golf Handicap</h3>
-                  <br>
-                  <p>Your golf handicap differential is calculated with the following formula: <span class="example-text">(18-Round Score - Course Slope) x 113 / Course Rating</span></p>
-                  <br>
-                  <p>The 113 represents a course rating of average difficulty, so it is a constant in the handicap formula. Once you have five round handicap differentials, your overall handicap can be calculated. It is done with the following formula: <span class="example-text">(Sum of all 5 differentials / Total Differentials) x 0.96</span></p>
-               </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Moa | Web Developer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+<body>
+    <div class="hero-container">
+
+        <div class="navigation-bar">
+            <div id="nav-logo">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg width="200px" enable-background="new 0 0 140.9 32.3" version="1.1" viewBox="0 0 140.9 32.3" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+	.st0{fill:none;stroke:#9e2945;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:10;}
+	path{stroke:none;fill:#9e2945;stroke-width:0.3;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:#9e2945;}
+</style>
+<rect id="rect" class="st0" x="1.5" y="1.5" width="29.3" height="29.3"/>
+	<path id="mAlpha" d="m20.7 22.8v-7.3l-3.6 6h-1.7l-3.5-5.8v7.1h-3.7v-13.9h3.2l4.9 8 4.7-8h3.2v13.8l-3.5 0.1z"/>
+	<path class="st1" id="letter" d="m46.1 16.8v6.4h-3.1v-1.4c-0.6 1-1.8 1.6-3.4 1.6-2.6 0-4.2-1.5-4.2-3.4 0-2 1.4-3.4 4.9-3.4h2.6c0-1.4-0.8-2.2-2.6-2.2-1.2 0-2.4 0.4-3.3 1l-1.2-2.3c1.2-0.9 3.1-1.4 4.9-1.4 3.4 0.1 5.4 1.7 5.4 5.1zm-3.2 2.9v-1.2h-2.2c-1.5 0-2 0.6-2 1.3 0 0.8 0.7 1.4 1.8 1.4 1 0 2-0.5 2.4-1.5z"/>
+	<path class="st1" id="letter" d="m48.7 8.6c0-1 0.8-1.8 2-1.8s2 0.8 2 1.8c0 1.1-0.8 1.9-2 1.9s-2-0.9-2-1.9zm0.4 3.4h3.3v11.3h-3.3v-11.3z"/>
+	<path class="st1" id="letter" d="m54.3 22.2l1.1-2.4c1 0.7 2.5 1.1 3.9 1.1 1.5 0 2.1-0.4 2.1-1 0-1.8-6.8 0-6.8-4.5 0-2.1 1.9-3.7 5.2-3.7 1.6 0 3.3 0.4 4.3 1l-1.1 2.3c-1.1-0.6-2.2-0.8-3.3-0.8-1.5 0-2.1 0.5-2.1 1 0 1.9 6.8 0.1 6.8 4.5 0 2.1-2 3.6-5.3 3.6-1.8 0.1-3.7-0.4-4.8-1.1z"/>
+	<path class="st1" id="letter" d="m65.7 17.6c0-3.4 2.6-5.8 6.2-5.8s6.2 2.4 6.2 5.8-2.6 5.8-6.2 5.8-6.2-2.4-6.2-5.8zm9.1 0c0-2-1.2-3.1-2.9-3.1s-2.9 1.2-2.9 3.1c0 2 1.3 3.1 2.9 3.1s2.9-1.1 2.9-3.1z"/>
+	<path class="st1" id="letter" d="m91.9 16.8v6.5h-3.3v-6c0-1.8-0.8-2.7-2.3-2.7-1.6 0-2.7 1-2.7 3v5.6h-3.3v-11.2h3.1v1.3c0.9-1 2.2-1.5 3.7-1.5 2.8 0 4.8 1.5 4.8 5z"/>
+	<path class="st1" id="letter" d="m113.6 16.8v6.4h-1v-6.3c0-2.5-1.3-3.8-3.4-3.8-2.5 0-4 1.7-4 4.3v5.8h-1v-6.3c0-2.5-1.3-3.8-3.4-3.8-2.5 0-4 1.7-4 4.3v5.8h-1v-11h1v2.4c0.7-1.5 2.2-2.4 4.2-2.4s3.4 0.9 4 2.6c0.7-1.6 2.3-2.6 4.4-2.6 2.4 0 4.2 1.6 4.2 4.6z"/>
+	<path class="st1" id="letter" d="m116.7 17.8c0-3.3 2.3-5.6 5.5-5.6s5.5 2.3 5.5 5.6-2.3 5.6-5.5 5.6-5.5-2.4-5.5-5.6zm9.9 0c0-2.8-1.9-4.6-4.4-4.6s-4.4 1.9-4.4 4.6c0 2.8 1.9 4.6 4.4 4.6s4.4-1.9 4.4-4.6z"/>
+	<path class="st1" id="letter" d="m138.8 16.3v6.9h-1v-2c-0.7 1.3-2 2-3.9 2-2.5 0-3.9-1.3-3.9-3.1 0-1.7 1.1-3.1 4.1-3.1h3.8v-0.9c0-2-1.1-3.1-3.3-3.1-1.5 0-2.9 0.6-3.8 1.4l-0.5-0.8c1.1-1 2.7-1.6 4.4-1.6 2.6 0.2 4.1 1.6 4.1 4.3zm-1 3.7v-2h-3.8c-2.3 0-3.1 0.9-3.1 2.2 0 1.4 1.1 2.3 3 2.3s3.2-0.9 3.9-2.5z"/>
+</svg>
             </div>
-            <form id="round1">
-               <input id="full-round-score" type="text" placeholder="18-round Score" required>
-               <input id="course-slope" type="text" placeholder="USGA Course Slope" required>
-               <input id="course-rating" type="text" placeholder="USGA Course Rating" required>
-               <button type="button" id="btn-round1">SUBMIT</button>
-            </form>
-            <div class="handicap-output">
-               <p>Current Round Handicap Index:<span id="handicap"></span></p>
-               <p>5-Round Handicap Index:<span id="average-handicap"></span></p>
+
+            <nav>
+                <ul id="">
+                    <li><a class="navLinks" href="#">HOME</a></li>
+                    <li><a class="navLinks" href="#">CONTACT</a></li>
+                    <li><a class="navLinks" href="#">ABOUT</a></li>
+                    <li><a class="navLinks" href="#"><img src="assets/github-icon.svg"></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+            <div class="header">
+                <p>Front-end Web Developer.<span class="blinking-cursor">|</span></p>
             </div>
+        </main>
+    </div>
+
+    <div class="skills-section">
+        <div class="about-info-container">
+            <div class="about">
+                <p class="box-header">About me</p>
+                <div class="about-text">
+                    <p>The scope of my work deals largely with the frontend: Single Page Apps (SPA’s), animations, responsive design, SASS/CSS3, Flexbox, Bootstrap, JQuery, Javascript ES6/ES5, HTML5, and all other facets of frontend devlopment work based
+                        in HTML/CSS/JS, along with all of the frame-works and libraries to go along with them.</p>
+                </div>
+                <div class="about-text">
+                    <p>Outside of frontend work, I continually push towards becoming a full-stack developer. I have built small apps with Node.Js, &amp; Express, React and EJS, utalized 3rd Party Web API’s and I have growing experience with NoSQL databases
+                        such as MongoDB and Reddis. I like to let curiosity take over, and as we all know, there’s a hell of alot of things to be curious about in Web Development. </p>
+                </div>
+            </div>
+            <div class="skills">
+                <p class="box-header">Skills</p>
+                <div class="skill-icons">
+                    <img src="assets/javascript.svg">
+                    <img src="assets/css.svg">
+                    <img src="assets/html5.svg">
+                    <img src="assets/sass.svg">
+                    <img src="assets/jQuery-Logo.svg">
+                    <img src="assets/nodejs.svg">
+                    <img src="assets/npm.svg">
+                    <img src="assets/photoshop.svg">
+                    <img src="assets/illustrator.svg">
+                    <img src="assets/wordpress.svg">
+                    <img src="assets/react.svg">
+                    <img src="assets/github-icon.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects-section">
+        <div class="heading">
+            <p>Portfolio.<span class="blinking-cursor">|</span></p>
          </div>
-         <div class="round-container">
-            <div class="round">
-               <p>Round 1</p>
-               <p><span class="rnd-output">Empty</span></p>
+        <div class="project-card-container">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/Liddel_Law.png">
+                </div>
+                <div class="project-text">
+                    <p><span class="bold-heading">Liddel Law</span></p>
+                </div>
             </div>
-            <div class="round">
-               <p>Round 2</p>
-               <p><span class="rnd-output">Empty</span></p>
+            <div class="project-card">
+                 <div class="project-img">
+                    <img src="assets/Golf_Handicap.png">
+                </div>
+                <div class="project-text">
+                    <p><span class="bold-heading">USGA Golf Handicap Calculator</span></p>
+                </div>
             </div>
-            <div class="round">
-               <p>Round 3</p>
-               <p><span class="rnd-output">Empty</span></p>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/Can_We_Golf.png">
+                </div>
+                <div class="project-text">
+                    <p><span class="bold-heading">Weather App</span></p>
+                </div>
             </div>
-            <div class="round">
-               <p>Round 4</p>
-               <p><span class="rnd-output">Empty</span></p>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/oLabs.png">
+                </div>
+                <div class="project-text">
+                    <p><span class="bold-heading">Ouroboros Labs</span></p>
+                </div>
             </div>
-            <div class="round">
-               <p>Round 5</p>
-               <p><span class="rnd-output">Empty</span></p>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <div class="contact-heading">
+                <p><span class="box-header">CONTACT ME</p>
+                <p>I am available for contact <i>twenty-four seven, three sixty-five</i>. I am open for freelance work and also FT positions. I look forward to hearing from you!</p>
+                 </div>
+                <div class="contact-input-container">
+                    <form id="ajax-contact" method="post" action="mailer.php">
+                        <div class="field fieldLeftAddon">
+                            <i class="glyphicon glyphicon-user"></i>
+                            <input class="glyph-input" type="text" id="name" name="name" placeholder="First and Last Name" required>
+                        </div>
+
+                        <div class="field">
+                            <i class="glyphicon glyphicon-envelope"></i>
+                            <input class="glyph-input" type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+
+                        <div class="field">
+                            <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                        </div>
+
+                        <div class="field">
+                            <button class="box-header" type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-         </div>
-      </div>
-      <script src="js/app.js"></script>
-   </body>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/anime.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
 </html>
