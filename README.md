@@ -1,6 +1,6 @@
 # Maison Moa
 
-[![resume.png](https://s18.postimg.org/5ijkawwi1/resume.png)](https://postimg.org/image/9eww6whhh/)
+<div style="text-align:center"><img src ="https://s18.postimg.org/guw5supt5/resume.png" /></div>
 
 This Github page hosts multiple static websites for my portfolio.
 Web applications for my portfolio are hosted with Heroku and will not be found hosted on this Github page. 
