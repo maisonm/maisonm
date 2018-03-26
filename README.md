@@ -1,4 +1,4 @@
-# maisonm.github.io
+# Maison Moa
 This Github page hosts multiple static websites for my portfolio.
 Web applications for my portfolio are hosted with Heroku and will not be found hosted on this Github page. 
 
