@@ -12,6 +12,22 @@ To access any static website in this repo, simply add the project's folder name 
 
 ---
 
+## Technologies Used
+
+###### Languages |
+HTML5, CSS3/SASS, Javascript(ES6), JSX, EJS(templating language)
+
+###### Frameworks |
+Node.js, Express, Bootstrap
+
+###### Libraries |
+React.js, JQuery 
+
+###### Databases | 
+Reddis, MongoDB
+
+---
+
 ## What's hosted here?
 
 #### Shui Restaurant |
