@@ -8,8 +8,7 @@ This Github page hosts multiple static websites for my portfolio.
 Web applications in my portfolio are hosted via Heroku and will not be found hosted on this Github page. To check those out, 
 the repository description for web applications in my portfolio will include a Heroku link.
 
-To access any static website in this repo, simply add the project's folder name to the end of the Github Page URL like so:
-<p font-size="10px" > https://maisonm.github.io/PROJECT-FOLDER-NAME => https://maisonm.github.io/shui-restaurant </p>
+To access any static website in this repo, simply add the project's folder name to the end of the Github Page URL like so: https://maisonm.github.io/FOLDER-NAME => https://maisonm.github.io/shui-restaurant
 
 ---
 
