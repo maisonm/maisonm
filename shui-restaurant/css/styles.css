@@ -399,6 +399,9 @@ body {
     position: fixed;
     right: 20px;
     top: 22px; }
+  .mobile-nav-menu #hamburger-menu-icon a {
+    cursor: pointer;
+  }
     .mobile-nav-menu #mobile-nav-dropdown {
       background: #e8e8e8;
       color: #595959;
