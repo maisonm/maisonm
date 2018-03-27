@@ -42,13 +42,13 @@ window.onload = () => {
 // Hero Review FadeIn / FadeOut Cycle
 function reviewCycle(delay) {
 
-    let elements = Array.prototype.slice.call(arguments, 1);
-    let functions = [];
+    var elements = Array.prototype.slice.call(arguments, 1);
+    var functions = [];
 
-    for (let i = 0; i < elements.length; i++) {
+    for (var i = 0; i < elements.length; i++) {
         functions.push(function (i) {
-            let prev = i === 0 ? elements.length - 1 : i - 1;
-            let next = (i + 1) % elements.length;
+            var prev = i === 0 ? elements.length - 1 : i - 1;
+            var next = (i + 1) % elements.length;
             return function() {
                 elements[prev].fadeToggle(function() {
                     elements[i].fadeToggle(function() {
@@ -133,7 +133,7 @@ topNavMenuLink.click(() => {
 // FadeIn/Out Element at Scroll Position 
 const scrollTopFadeOut = (element, speed, fromTop) => {
 	$(window).on('scroll', () => {
-		let scrollTop = $(window).scrollTop();
+		var scrollTop = $(window).scrollTop();
 		if( scrollTop >= fromTop) {
 			element.fadeOut(speed);
 		} else {
