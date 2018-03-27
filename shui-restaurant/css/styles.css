@@ -1,4 +1,7 @@
-a {
+
+* {
+  margin: 0;
+  padding: 0; }a {
   text-decoration: none; }
 
 ul {
@@ -44,6 +47,9 @@ body {
     color: #a8a8a8;
     transition: .4s;
     letter-spacing: .4px; }
+
+.mobile-nav-menu {
+  display: none; }
 
 .hero-heading {
   position: absolute;
@@ -112,9 +118,9 @@ body {
   .side-navbar .side-navbar-links {
     position: absolute;
     top: 43%;
-    text-align: center; }
-    .side-navbar .side-navbar-links p:nth-child(1) {
-      margin-bottom: 4px; }
+    text-align: center;
+    p: nth-child(1);
+      p-margin-bottom: 4px; }
     .side-navbar .side-navbar-links ul li {
       margin-bottom: 30px; }
     .side-navbar .side-navbar-links ul li a {
@@ -251,13 +257,13 @@ body {
     margin-bottom: 20px;
     font-size: .8em;
     border-bottom: 2px solid #a8a8a8;
-    padding-bottom: 6px; }
-    .menu-item .item-info p:nth-child(2) {
-      font-weight: 500;
-      letter-spacing: .2px;
-      font-size: .8em;
-      font-style: italic;
-      margin-right: 20px; }
+    padding-bottom: 6px;
+    p: nth-child(2);
+      p-font-weight: 500;
+      p-letter-spacing: .2px;
+      p-font-size: .8em;
+      p-font-style: italic;
+      p-margin-right: 20px; }
     .menu-item .item-info .item-name {
       text-transform: uppercase;
       font-weight: 700;
@@ -277,6 +283,75 @@ body {
     font-style: italic;
     margin-right: 20px; }
 
+@media only screen and (max-width: 980px) {
+  #sidenav-logo {
+    width: 150px; } }
+@media only screen and (max-width: 480px) {
+  .navbar {
+    justify-content: center;
+    position: fixed; }
+
+  .mobile-nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    right: 20px;
+    top: 22px; }
+    .mobile-nav-menu #mobile-nav-dropdown {
+      background: #e8e8e8;
+      color: #595959;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      transition: 1s;
+      margin-top: 24px;
+      position: relative;
+      border-radius: 2px;
+      box-shadow: 1px 1px 4px #333;
+      height: 0;
+      width: 0; }
+      .mobile-nav-menu #mobile-nav-dropdown #mobile-nav-contents {
+        display: none; }
+      .mobile-nav-menu #mobile-nav-dropdown ul li {
+        margin-bottom: 6px; }
+        .mobile-nav-menu #mobile-nav-dropdown ul li a {
+          color: #595959;
+          font-weight: 500;
+          transition: .3s; }
+        .mobile-nav-menu #mobile-nav-dropdown ul li a:hover {
+          color: #a8a8a8;
+          transition: .3s; }
+      .mobile-nav-menu #mobile-nav-dropdown #mobile-nav-dropdown-social-icons {
+        margin-right: 14px;
+        margin-top: 30px; }
+        .mobile-nav-menu #mobile-nav-dropdown #mobile-nav-dropdown-social-icons img {
+          width: 24px; }
+        .mobile-nav-menu #mobile-nav-dropdown #mobile-nav-dropdown-social-icons p {
+          font-size: .6em;
+          margin-top: 4px;
+          margin-left: 10px;
+          font-weight: 500;
+          color: #797979; }
+
+  #navbar-links {
+    display: none; }
+
+  .hero-review-card {
+    font-size: 1.5em !important; }
+
+  .side-navbar {
+    display: none; }
+
+  .menu-selection {
+    display: none; }
+
+  .menu-display {
+    width: 100%; }
+
+  .menu-item {
+    width: 70%; } }
 .reservations-page-container {
   height: 100vh;
   width: 100%;
@@ -379,10 +454,6 @@ body {
       color: #a8a8a8;
       transition: .3s; }
 
-* {
-  margin: 0;
-  padding: 0; }
 
-/*# sourceMappingURL=styles.css.map */
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,307 +1,422 @@
 a {
-     text-decoration: none;
+    text-decoration: none;
 }
- ul {
-     list-style: none;
+ul {
+    list-style: none;
 }
- body {
-     font-family: $montserrat;
-     font-size: 16px;
-     color: $main-font-color;
+body {
+    font-family: $montserrat;
+    font-size: 16px;
+    color: $main-font-color;
 }
- // Begin Hero Section / Navbar styles 
+// ***** Index Page Styles *****
+// Begin Hero/Navbar Styles
  .hero {
-     background-image: url("../assets/hero.png");
-     background-repeat: no-repeat;
-     background-attachment: fixed;
-     background-size: cover;
-     height: 100vh;
-     width: 100%;
+    background-image: url("../assets/hero.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
- .navbar {
-     background: $navbar-bg-color;
-     display: flex;
-     opacity: .9;
-     justify-content: space-between;
-     width: 100%;
-     padding: 10px 0 14px 0;
-     z-index: 99;
-     ul {
-         margin-top: 14px;
-         margin-right: 18px;
+.navbar {
+    background: $navbar-bg-color;
+    display: flex;
+    opacity: .9;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0 14px 0;
+    z-index: 99;
+    ul {
+        margin-top: 14px;
+        margin-right: 18px;
     }
-     img {
-         margin-left: 18px;
+    img {
+        margin-left: 18px;
     }
 }
- .nav-links {
-     ul li {
-         display: inline;
-         padding: 12px;
-         a {
-             color: $navbar-link-color;
-             text-transform: uppercase;
-             font-weight: 600;
-             transition: .2s;
-             font-size: .8em;
+.nav-links {
+    ul li {
+        display: inline;
+        padding: 12px;
+        a {
+            color: $navbar-link-color;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: .2s;
+            font-size: .8em;
         }
-         a:hover {
-             color: $link-hover-color;
-             transition: .4s;
-             letter-spacing: .4px;
+        a:hover {
+            color: $link-hover-color;
+            transition: .4s;
+            letter-spacing: .4px;
         }
     }
 }
- .hero-heading {
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
+.mobile-nav-menu {
+    display: none;
 }
- .hero-review-card {
-     color: #fff;
-     font-size: 2em;
-     background-color: $review-card-bg-color;
-     padding: 8px;
-     color: $review-text-color;
+.hero-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
- #hero-review-1 {
+.hero-review-card {
+    color: #fff;
+    font-size: 2em;
+    background-color: $review-card-bg-color;
+    padding: 8px;
+    color: $review-text-color;
 }
- #hero-review-2 {
-     display: none;
+#hero-review-1 {} #hero-review-2 {
+    display: none;
 }
- #hero-review-3 {
-     display: none;
+#hero-review-3 {
+    display: none;
 }
- .small-text {
-     font-size: .6em;
-     font-style: italic;
+.small-text {
+    font-size: .6em;
+    font-style: italic;
 }
- .hero-goto-menu {
-     position: absolute;
-     top: 88%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     img {
-         width: 34px;
+.hero-goto-menu {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 34px;
     }
-     p {
-         margin-top: 4px;
+    p {
+        margin-top: 4px;
     }
-     p a {
-         color: $main-font-color;
-         text-transform: uppercase;
-         font-weight: 600;
-         font-size: .7em;
+    p a {
+        color: $main-font-color;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: .7em;
     }
-     p a:hover {
-         color: $link-hover-color;
-         transition: .4s;
+    p a:hover {
+        color: $link-hover-color;
+        transition: .4s;
     }
 }
- // Begin Menu Section Styles 
+// Begin Menu Section Styles 
  .menu {
-     height: 100vh;
-     background-color: $menu-bg-color;
-     display: flex;
-     overflow: hidden;
+    height: 100vh;
+    background-color: $menu-bg-color;
+    display: flex;
+    overflow: hidden;
 }
- .side-navbar {
-     background-color: $navbar-bg-color;
-     box-shadow: $side-navbar-box-shadow;
-     height: 100vh;
-     width: 20%;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     position: relative;
-     z-index: 99;
-     .side-navbar-logo {
-         margin-top: 50px;
-         img {
-             width: 200px;
+.side-navbar {
+    background-color: $navbar-bg-color;
+    box-shadow: $side-navbar-box-shadow;
+    height: 100vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+    .side-navbar-logo {
+        margin-top: 50px;
+        img {
+            width: 200px;
         }
     }
-     .side-navbar-links {
-         position: absolute;
-         top: 43%;
-         text-align: center;
-         p:nth-child(1) {
-             margin-bottom: 4px;
+    .side-navbar-links {
+        position: absolute;
+        top: 43%;
+        text-align: center;
+        p: nth-child(1) {
+            margin-bottom: 4px;
         }
-         ul li {
-             margin-bottom: 30px;
+        ul li {
+            margin-bottom: 30px;
         }
-         ul li a {
-             color: $side-navbar-font-color;
-             text-transform: uppercase;
-             font-weight: 600;
-             transition: .2s;
-             font-size: .8em;
+        ul li a {
+            color: $side-navbar-font-color;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: .2s;
+            font-size: .8em;
         }
     }
 }
- .side-navbar-location {
-     font-size: .7em;
-     letter-spacing: .5px;
-     margin-top: 70px;
-     border-right: 2px solid #333;
-     border-left: 2px solid #333;
-     padding: 0 10px;
-     text-align: center;
-     color: $side-navbar-address-font-color;
-     position: absolute;
-     top: 82%;
+.side-navbar-location {
+    font-size: .7em;
+    letter-spacing: .5px;
+    margin-top: 70px;
+    border-right: 2px solid #333;
+    border-left: 2px solid #333;
+    padding: 0 10px;
+    text-align: center;
+    color: $side-navbar-address-font-color;
+    position: absolute;
+    top: 82%;
 }
- .side-navbar-links ul li a:hover {
-     color: #a8a8a8;
-     transition: .4s;
-     letter-spacing: .4px;
+.side-navbar-links ul li a:hover {
+    color: #a8a8a8;
+    transition: .4s;
+    letter-spacing: .4px;
 }
- .side-navbar-social-icons {
-     position: absolute;
-     top: 85%;
-     img {
-         padding: 0 10px 
+.side-navbar-social-icons {
+    position: absolute;
+    top: 85%;
+    img {
+        padding: 0 10px
     }
 }
- .menu-selection {
-     background-image: url('../assets/stacked-wood-bg.png');
-     background-size: cover;
-     box-shadow: $menu-options-box-shadow;
-     width: 0%;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     text-align: center;
-     text-transform: uppercase;
-     z-index: 1;
-     position: relative;
-     transition: 1.1s;
+.menu-selection {
+    background-image: url('../assets/stacked-wood-bg.png');
+    background-size: cover;
+    box-shadow: $menu-options-box-shadow;
+    width: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+    position: relative;
+    transition: 1.1s;
 }
- .menu-select-links {
-     padding-bottom: 4px;
-     text-transform: uppercase;
-     transition: .2s;
-     font-size: .8em;
-     cursor: pointer;
-     margin-bottom: 30px;
-     display: none;
+.menu-select-links {
+    padding-bottom: 4px;
+    text-transform: uppercase;
+    transition: .2s;
+    font-size: .8em;
+    cursor: pointer;
+    margin-bottom: 30px;
+    display: none;
 }
- .menu-select-links:hover {
-     color: $selected-menu-option-hover-color;
-     transition: .3s;
+.menu-select-links:hover {
+    color: $selected-menu-option-hover-color;
+    transition: .3s;
 }
- .menu-heading {
-     background-color: $menu-heading-bg-color;
-     opacity: .9;
-     width: 100%;
-     margin: 20px 60px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     padding: 10px;
-     font-size: 1.2em;
-     color: #e8e8e8;
-     box-shadow: $menu-heading-box-shadow;
+.menu-heading {
+    background-color: $menu-heading-bg-color;
+    opacity: .9;
+    width: 100%;
+    margin: 20px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 1.2em;
+    color: #e8e8e8;
+    box-shadow: $menu-heading-box-shadow;
 }
- .menu-logo {
-     display: flex;
-     justify-content: center;
-     width: 100%;
+.menu-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
- .selected-link {
-     border-bottom: $selected-menu-option-border;
-     padding: 4px;
-     transition: .3s;
+.selected-link {
+    border-bottom: $selected-menu-option-border;
+    padding: 4px;
+    transition: .3s;
 }
- #close-btn {
-     position: absolute;
-     top: 10px;
-     right: 15px;
-     color: $close-btn-color;
-     cursor: pointer;
-     transition: .3s;
+#close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: $close-btn-color;
+    cursor: pointer;
+    transition: .3s;
 }
- #close-btn:hover {
-     color: $selected-menu-option-hover-color;
-     transition: .3s;
+#close-btn:hover {
+    color: $selected-menu-option-hover-color;
+    transition: .3s;
 }
- #open-btn {
-   position: absolute;
-   top: 0;
-   margin-top: 6px;
-   right: -28px;
-   z-index: 99;
-   cursor: pointer;
+#open-btn {
+    position: absolute;
+    top: 0;
+    margin-top: 6px;
+    right: -28px;
+    z-index: 99;
+    cursor: pointer;
+}
+.open-menu-panel {
+    width: 12%;
+}
+.close-menu-panel {
+    width: 0%;
+}
+.menu-display {
+    width: 80%;
+    color: #595959;
+    display: flex;
+    overflow-y: scroll;
+}
+.lunch-menu-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0;
+}
+.small-info {
+    font-size: .9em;
+}
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 40%;
+    margin: 1.33%;
+    .item-info {
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        font-size: .8em;
+        border-bottom: 2px solid #a8a8a8;
+        padding-bottom: 6px;
+        p: nth-child(2) {
+            font-weight: 500;
+            letter-spacing: .2px;
+            font-size: .8em;
+            font-style: italic;
+            margin-right: 20px;
+        }
+        .item-name {
+            text-transform: uppercase;
+            font-weight: 700;
+            text-transform: italic;
+            margin-bottom: 4px;
+            letter-spacing: .2px;
+        }
+        .item-description {
+            font-size: .9em;
+            color: #595959;
+        }
+    }
+}
+.steak-price {
+    display: flex;
+    p:nth-child(1), p:nth-child(2), p:nth-child(3) {
+        font-weight: 500;
+        letter-spacing: .2px;
+        font-size: .8em;
+        font-style: italic;
+        margin-right: 20px;
+    }
+}
+// Begin Index Page Media Queries
+// ****** 980px Width ******* 
+@media only screen and (max-width: 980px) {
+    #sidenav-logo {
+        width: 150px;
+    }
+}
+// ****** 480px Width *******
+@media only screen and (max-width: 480px) {
+    
+    .navbar {
 
- }
- .open-menu-panel {
-     width: 12%;
-}
- .close-menu-panel {
-     width: 0%;
-}
- .menu-display {
-     width: 80%;
-     color: #595959;
-     display: flex;
-     overflow-y: scroll;
-}
- .lunch-menu-display {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     padding: 40px 0;
-}
- .small-info {
-     font-size: .9em;
-}
- .menu-item {
-     display: flex;
-     flex-direction: column;
-     padding: 20px;
-     width: 40%;
-     margin: 1.33%;
-     .item-info {
-         justify-content: space-between;
-         align-items: center;
-         margin-bottom: 20px;
-         font-size: .8em;
-         border-bottom: 2px solid #a8a8a8;
-         padding-bottom: 6px;
-
-         p:nth-child(2) {
-             font-weight: 500;
-             letter-spacing: .2px;
-             font-size: .8em;
-             font-style: italic;
-             margin-right: 20px;
-        }
-         .item-name {
-             text-transform: uppercase;
-             font-weight: 700;
-             text-transform: italic;
-             margin-bottom: 4px;
-             letter-spacing: .2px;
-        }
-         .item-description {
-             font-size: .9em;
-             color: #595959;
-        }
+        justify-content: center;
+        position: fixed;
     }
-}
- .steak-price {
-     display: flex;
-     p:nth-child(1), p:nth-child(2), p:nth-child(3) {
-         font-weight: 500;
-         letter-spacing: .2px;
-         font-size: .8em;
-         font-style: italic;
-         margin-right: 20px;
+
+    .mobile-nav-menu {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: fixed;
+        right: 20px;
+        top: 22px;
+
+        #mobile-nav-dropdown {
+
+          background: $menu-bg-color;
+          color: #595959;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          transition: 1s;
+          margin-top: 24px;
+          position: relative;
+          border-radius: 2px;
+          box-shadow: $side-navbar-box-shadow;
+          height: 0; //Sets to 180px;
+          width: 0; //Sets to 200px;
+
+
+          #mobile-nav-contents {
+
+            display: none;
+
+          }
+
+
+           ul li {
+
+            margin-bottom: 6px;
+
+            a {
+
+                color: #595959;
+                font-weight: 500;
+                transition: .3s;
+            }
+
+            a:hover {
+
+                color: #a8a8a8;
+                transition: .3s;
+            }
+
+           }
+
+           #mobile-nav-dropdown-social-icons {
+
+            margin-right: 14px;
+            margin-top: 30px;
+
+            
+            img {
+
+                width: 24px;
+
+            }
+
+            p {
+
+                font-size: .6em;
+                margin-top: 4px;
+                margin-left: 10px;
+                font-weight: 500;
+                color: #797979;
+
+            }
+
+           }
+          
+        }
+
+    }
+
+    #navbar-links {
+        display: none;
+    }
+    .hero-review-card {
+        font-size: 1.5em!important;
+    }
+    .side-navbar {
+        display: none;
+    }
+    .menu-selection {
+        display: none;
+    }
+    .menu-display {
+        width: 100%;
+    }
+    .menu-item {
+        width: 70%;
     }
 }

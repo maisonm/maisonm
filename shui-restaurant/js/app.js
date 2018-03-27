@@ -25,6 +25,9 @@ const reservationDate = $('#reservation-input-date');
 const reservationSubmitBtn = $('#reservation-submit-btn');
 const reservationForm = $('.reservation-form');
 const reservationSubmitSuccess = $('.reservation-form-submit');
+const mobileNavDropdown = $('#mobile-nav-dropdown');
+const mobileNavContents = $('#mobile-nav-contents');
+const hamburgerMenuIcon = $('#hamburger-menu-icon');
 
 
 // ***** BEGIN INDEX PAGE ******
@@ -56,7 +59,7 @@ function reviewCycle(delay) {
         }(i));
     }
     functions[1]();
-};
+}
 
 //Smooth Scroll to Target
 const smoothScrollToTarget = (target, transition, animate) => {
@@ -75,14 +78,14 @@ const openSideMenu = () => {
 	setTimeout( () => {
 		menuOptionPanel.addClass('open-menu-panel');
 		menuOptionPanel.removeClass('close-menu-panel');
-	}, 1000);
+	}, 1000)
 
 	setTimeout( () => {
 		mainDishesMenuLink.fadeIn(800);
 		seafoodMenuLink.fadeIn(800);
 		appetizerMenuLink.fadeIn(800);
 		sidesMenuLink.fadeIn(800);
-	}, 1500);
+	}, 1500)
 
 }
 
@@ -91,41 +94,41 @@ menuBtn.click( () => {
 
 	openSideMenu();
 
-});
+})
 
 // Menu Panel Links Scroll to Menu Heading Target
 mainDishesMenuLink.click( () => {
 
 	smoothScrollToTarget(mainDishMenuTarget, 800, menuDisplay);
-});
+})
 
 seafoodMenuLink.click( () => {
 
 	smoothScrollToTarget(seafoodMenuTarget, 800, menuDisplay);
-});
+})
 
 appetizerMenuLink.click( () => {
 
 	smoothScrollToTarget(appetizerMenuTarget, 800, menuDisplay);
-});
+})
 
 sidesMenuLink.click( () => {
 
 	smoothScrollToTarget(sideMenuTarget, 800, menuDisplay);
-});
+})
 
 // Side Navbar Links Scroll to Targets
 sideNavHomeLink.click(() => {
 
 	smoothScrollToTarget(hero, 800, htmlBody);
-});
+})
 
 // Top Navbar Links Scroll to Targets
 topNavMenuLink.click(() => {
 
 	smoothScrollToTarget(menuSection, 800, htmlBody);
 	openSideMenu();
-});
+})
 
 // FadeIn/Out Element at Scroll Position 
 const scrollTopFadeOut = (element, speed, fromTop) => {
@@ -136,7 +139,7 @@ const scrollTopFadeOut = (element, speed, fromTop) => {
 		} else {
 			element.fadeIn(speed);
 		}
-	});
+	})
 }
 
 // Open and Close Menu Panel with 'Open and Close' buttons
@@ -149,12 +152,12 @@ const closeMenuOptions = () => {
 
 	setTimeout( () => {
 		openBtn.fadeIn(800);
-	}, 1300);
+	}, 1300)
 
 	setTimeout( () => {
 		menuOptionPanel.addClass('close-menu-panel');
 		menuOptionPanel.removeClass('open-menu-panel');
-	}, 800);
+	}, 800)
 }
 
 const openMenuOptions = () => {
@@ -169,17 +172,17 @@ const openMenuOptions = () => {
 		seafoodMenuLink.fadeIn(500);
 		appetizerMenuLink.fadeIn(500);
 		sidesMenuLink.fadeIn(500);
-	}, 800);
+	}, 800)
 
 }
 // Slide out menu open/close button
-closeBtn.click(closeMenuOptions);
-openBtn.click(openMenuOptions);
+closeBtn.click(closeMenuOptions)
+openBtn.click(openMenuOptions)
 
 
 
 // ***** Begin Reservation Page *****
-$(document).ready(function() {
+window.onload = () => {
 
 	// Date and Time Input Drop Down Menu
     $('#reservation-input-date').datepicker();
@@ -188,7 +191,7 @@ $(document).ready(function() {
     // Reservation Submit Button Click Handler
 	reservationSubmitBtn.click(reservationsSubmitLoadingSuccess);
 
-});
+}
 
 // Faux Reservation Submit Success Loading Icon and Success Message
 const reservationsSubmitLoadingSuccess = () => {
@@ -199,7 +202,7 @@ const reservationsSubmitLoadingSuccess = () => {
 		reservationSubmitSuccess.fadeIn(500);
 		reservationSubmitSuccess.css({
 			display: 'flex'
-		});
+		})
 
 	}, 490)	
 
@@ -208,5 +211,33 @@ const reservationsSubmitLoadingSuccess = () => {
 		$('.reservation-submit-success').delay(500).fadeIn(500);
 	}, 5000)
 }
+
+
+// ***** Mobile Hamburger Menu *****
+
+const toggleMobileNavDropdown = () => {
+
+	if(mobileNavDropdown.height() == 0) {
+
+		mobileNavDropdown.css({
+			height: '180px',
+			width: '200px'
+		})
+		mobileNavContents.delay(800).fadeIn(900);
+
+	} else if(mobileNavDropdown.height() == 180) {
+
+		mobileNavContents.fadeOut(400);
+
+		setTimeout(() =>  {
+			mobileNavDropdown.css({
+			height: '0px',
+			width: '0px'
+		})
+		}, 400)
+	}
+}
+
+hamburgerMenuIcon.click(toggleMobileNavDropdown)
 
 
