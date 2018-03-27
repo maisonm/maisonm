@@ -150,7 +150,7 @@ body {
     position: absolute;
     top: 43%;
     text-align: center;
-    p: nth-child(1);
+    p:nth-child(1);
       p-margin-bottom: 4px; }
     .side-navbar .side-navbar-links ul li {
       margin-bottom: 30px; }
@@ -342,7 +342,7 @@ body {
     font-size: .8em;
     border-bottom: 2px solid #a8a8a8;
     padding-bottom: 6px;
-    p: nth-child(2);
+    p:nth-child(2);
       p-font-weight: 500;
       p-letter-spacing: .2px;
       p-font-size: .8em;
