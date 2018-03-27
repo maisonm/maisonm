@@ -397,7 +397,7 @@ body {
         -ms-flex-align: end;
             align-items: flex-end;
     position: fixed;
-    right: 20px;
+    left: 20px;
     top: 22px; }
     .mobile-nav-menu #mobile-nav-dropdown {
       background: #e8e8e8;
