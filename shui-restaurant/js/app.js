@@ -238,6 +238,7 @@ const toggleMobileNavDropdown = () => {
 	}
 }
 
+window.onload = () => {
 hamburgerMenuIcon.click(toggleMobileNavDropdown)
-
+}
 
