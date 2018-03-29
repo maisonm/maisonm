@@ -239,6 +239,6 @@ const toggleMobileNavDropdown = () => {
 }
 
 window.onload = () => {
-hamburgerMenuIcon.on('click touchstart tap', toggleMobileNavDropdown);
+hamburgerMenuIcon.on('click touchend touchstart', toggleMobileNavDropdown); // iOS
 }
 
