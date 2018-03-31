@@ -29,13 +29,11 @@ Reddis, MongoDB
 
 ### Static Websites
 
-#### Shui Restaurant |
-https://maisonm.github.io/shui-restaurant 
+#### Shui Restaurant | https://maisonm.github.io/shui-restaurant 
 
 This website is for a fictional steakhouse restaurant. It exists thanks to HTML5, Flexbox, SASS, and Javascript(ES6)/JQuery. Note that you can submit the reservation form to see the loading and success animations. 
 
-#### Golf Handicap Calculator |
-https://maisonm.github.io/golf-handicap-calculator
+#### Golf Handicap Calculator | https://maisonm.github.io/golf-handicap-calculator
 
 Written entirely with vanilla Javascript(ES6). This was a personal project to help me quickly gauge my average golf handicap after every 5 rounds.
 
