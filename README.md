@@ -43,3 +43,5 @@ Written entirely with vanilla Javascript(ES6). This was a personal project to he
 #### Crypto Currency ICO Lister
 
 #### 5-day Weather Outlook
+
+#### Bitcoin Price Chart
